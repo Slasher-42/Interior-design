@@ -1,26 +1,51 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7f8f7;
+  --foreground: #15201d;
+
+  /* Brand: deep teal/charcoal, matching the Space Design Group badge */
+  --color-brand-50: #f2f7f5;
+  --color-brand-100: #dceae5;
+  --color-brand-200: #b8d4ca;
+  --color-brand-300: #8db6a8;
+  --color-brand-400: #5d9381;
+  --color-brand-500: #3c7563;
+  --color-brand-600: #2a5c4d;
+  --color-brand-700: #20473c;
+  --color-brand-800: #173329;
+  --color-brand-900: #122620;
+  --color-brand-950: #0d1e19;
+
+  /* Accent: warm sand, used sparingly for CTAs/highlights */
+  --color-accent-400: #d8bb84;
+  --color-accent-500: #c9a86a;
+  --color-accent-600: #ad8a4c;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand-50: var(--color-brand-50);
+  --color-brand-100: var(--color-brand-100);
+  --color-brand-200: var(--color-brand-200);
+  --color-brand-300: var(--color-brand-300);
+  --color-brand-400: var(--color-brand-400);
+  --color-brand-500: var(--color-brand-500);
+  --color-brand-600: var(--color-brand-600);
+  --color-brand-700: var(--color-brand-700);
+  --color-brand-800: var(--color-brand-800);
+  --color-brand-900: var(--color-brand-900);
+  --color-brand-950: var(--color-brand-950);
+  --color-accent-400: var(--color-accent-400);
+  --color-accent-500: var(--color-accent-500);
+  --color-accent-600: var(--color-accent-600);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
 }
